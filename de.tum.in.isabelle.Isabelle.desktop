@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Isabelle
+Comment=Generic Proof Assistant.
+GenericName=Generic Prof Assistant
+Icon=de.tum.in.isabelle.Isabelle
+Exec=isabelle_jedit

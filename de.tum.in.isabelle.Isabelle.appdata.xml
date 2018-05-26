@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>de.tum.in.isabelle.Isabelle</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>ISC and CC-BY-3.</project_license>
+  <name>OpenClonk</name>
+  <summary>Multiplayer action game where you control small and nimble humanoids</summary>
+  <description>
+    <p>
+      Isabelle is a generic proof assistant.
+      It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus.
+      Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
+<!--    <p>
+The main application is the formalization of mathematical proofs and in particular formal verification, which includes proving the correctness of computer hardware or software and proving properties of computer languages and protocols.
+    <p>
+The most widespread instance of Isabelle nowadays is Isabelle/HOL, which provides a higher-order logic theorem proving environment that is ready to use for big applications.
+    <p>
+Isabelle/HOL includes powerful specification tools, e.g. for (co)datatypes, (co)inductive definitions and recursive functions with complex pattern matching.
+    <p>
+Proofs are conducted in the structured proof language Isar, allowing for proof text naturally understandable for both humans and computers.
+    <p>
+For proofs, Isabelle incorporates some tools to improve the user's productivity. In particular, Isabelle's classical reasoner can perform long chains of reasoning steps to prove formulas. The simplifier can reason with and about equations. Linear arithmetic facts are proved automatically, various algebraic decision procedures are provided. External first-order provers can be invoked through sledgehammer.
+    <p>
+Abstract specifications are supported by a module system (known as locales), of which type classes are a special case.
+    <p>
+Isabelle provides excellent notational support: new notations can be introduced, using normal mathematical symbols. Definitions and proofs may include LaTeX source, from which Isabelle can automatically generate typeset documents (papers, books, theses).
+    <p>
+Isabelle/HOL allows to turn executable specifications directly into code in SML, OCaml, Haskell, and Scala.
+    <p>
+Isabelle comes with a large theory library of formally verified mathematics, including elementary number theory (for example, Gauss's law of quadratic reciprocity), analysis (basic properties of limits, derivatives and integrals), algebra (up to Sylow's theorem) and set theory (the relative consistency of the Axiom of Choice). Also provided are numerous examples arising from research into formal verification. A vast collection of applications is accessible via the Archive of Formal Proofs, stemming both from mathematics and software engineering.
+    <p>
+Isabelle/jEdit is the default user interface and Prover IDE for Isabelle. It is based on jEdit and Isabelle/Scala. It provides a metaphor of continuous proof checking of a versioned collection of theory sources, with instantaneous feedback in real-time and rich semantic markup for the formal text.
+    <p>
+Isabelle may serve as a generic framework for rapid prototyping of deductive systems. These are formulated within Isabelle's logical framework Isabelle/Pure, which is suitable for a variety of formal calculi (e.g. axiomatic set theory). Instantiating the generic infrastructure to a particular calculus usually requires only minimal setup in the Isabelle implementation language ML. One may also write arbitrary proof procedures or even theory extension packages in ML, without breaking system soundness (Isabelle follows the well-known LCF system approach to achieve a secure system).-->
+    </p>
+  </description>
+  <screenshots>
+    <screenshot>
+      <image>https://isabelle.in.tum.de/img/isabelle_jedit.png</image>
+    <caption>Main prover UI (jEdit)</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://isabelle.in.tum.de/</url>
+  <releases>
+    <release version="5.1.0" date="2017-10-09" />
+  </releases>
+</component>
