@@ -17,6 +17,7 @@ modules:
       sha256: fca55aade626b611f4167d6fede2647247e746c6286cb40a9655392f55fe6107
    buildsystem: simple
    build-commands:
+    - sed -i 's#^.*exec perl.*%ENV.* >#cat /proc/self/environ >#' lib/Tools/getenv
     - cp -ar * /app
 
  - name: desktop-misc
@@ -31,13 +32,14 @@ modules:
       path: isabelle_logo.svg
    buildsystem: simple
    build-commands:
-    - install -dm755 /app/share/{icons/hicolor/{512x512,256x256,128x128,64x64,32x32}/apps,applications,appdata}
     - install -m555 isabelle_jedit /app/bin/
+    - install -dm755 /app/share/{applications,appdata}
     - install -m444 $FLATPAK_ID.appdata.xml /app/share/appdata
     - install -m444 $FLATPAK_ID.desktop /app/share/applications
-    - for p in {5..9}; do 
+    - set -e -u; for p in {5..9}; do 
         r=$(( 2 ** $p ));
         dst=/app/share/icons/hicolor/$r"x"$r/apps/"$FLATPAK_ID".png;
+        install -dm755 "$(dirname $dst)";
         rsvg-convert isabelle_logo.svg -w $r -h $r -f png -o "$dst";
       done
 
