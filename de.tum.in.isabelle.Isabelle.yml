@@ -1,7 +1,7 @@
 id: de.tum.in.isabelle.Isabelle
-runtime: org.kde.Platform
-runtime-version: 5.10
-sdk: org.kde.Sdk
+runtime: org.freedesktop.Platform
+runtime-version: 1.6
+sdk: org.freedesktop.Sdk
 command: isabelle_jedit
 finish-args:
  - --socket=x11
